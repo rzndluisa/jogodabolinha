@@ -64,8 +64,18 @@ function clearShapes(){
     const shapes = document.querySelectorAll('.square, .smallCircle');
     shapes.forEach(shape => shape.remove());
 }
-//Função para resetar o fundo e remover formas
+//Função para resetar o fundo e remover formas(botão 3)
 function resetGameArea(){
     clearShapes();
     gameArea.style.backgroundColor = originalBackgroundColor;
 } 
+// Eventos para clicar nos botões 1, 2 e 3
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Digit1'){
+        createSquares();
+    } else if (event.code === 'Digit2'){
+        createCircles();
+    } else if (event.code === 'Digit3') {
+        resetGameArea();
+    }
+    });
