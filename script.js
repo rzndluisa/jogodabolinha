@@ -64,3 +64,8 @@ function clearShapes(){
     const shapes = document.querySelectorAll('.square, .smallCircle');
     shapes.forEach(shape => shape.remove());
 }
+//Função para resetar o fundo e remover formas
+function resetGameArea(){
+    clearShapes();
+    gameArea.style.backgroundColor = originalBackgroundColor;
+} 
