@@ -27,3 +27,8 @@ document.addEventListener('keydown', (event) => {
     }
     updateCirclePosition();
 });
+//Função que atualiza a posição da bolinha
+function updateCirclePosition() {
+    circle.style.left = `${posX}px`;
+    circle.style.top = `${posY}px`;
+}
