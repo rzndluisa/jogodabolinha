@@ -19,7 +19,7 @@ document.addEventListener('keydown', (event) => {
             if (posY < window.innerHeight - circle.offsetHeight) posY += moveSpeed;
             break;
         case 'ArrowLeft':
-            if (posX > 0) posX -= moveSpeed:
+            if (posX > 0) posX -= moveSpeed;
             break;
         case 'ArrowRight':
             if (posX < window.innerWidth - circle.offsetWidth) posX += moveSpeed;
