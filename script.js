@@ -58,5 +58,9 @@ function createCircles() {
         smallCircle.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
         gameArea.appendChild(smallCircle);
     }
-
+}
+// Função para limpar as formas existentes
+function clearShapes(){
+    const shapes = document.querySelectorAll('.square, .smallCircle');
+    shapes.forEach(shape => shape.remove());
 }
