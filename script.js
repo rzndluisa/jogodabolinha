@@ -47,3 +47,16 @@ function createSquares() {
     }
 
 }
+// Função para criar círculos
+function createCircles() {
+    clearShapes();
+    gameArea.style.backgroundColor = 'green';
+
+    for (let i = 0; i < 5; i++) {
+        const smallCircle = document.createElement('div');
+        smallCircle.classList.add('small-circle');
+        smallCircle.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
+        gameArea.appendChild(smallCircle);
+    }
+
+}
