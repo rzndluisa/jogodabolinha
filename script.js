@@ -42,7 +42,7 @@ function createSquares() {
         const square = document.createElement('div');
         square.classList.add('square');
         square.style.left = `${Math.random() * (window.innerWidth - 50)}px`;
-        square.style.top = `${Math.random() * (window.innerHeight - 50)} px`;
+        square.style.top = `${Math.random() * (window.innerHeight - 50)}px`;
         gameArea.appendChild(square);
     }
 
@@ -56,12 +56,13 @@ function createCircles() {
         const smallCircle = document.createElement('div');
         smallCircle.classList.add('small-circle');
         smallCircle.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
+        smallCircle.style.top = `${Math.random() * (window.innerWidth - 30)}px`;
         gameArea.appendChild(smallCircle);
     }
 }
 // Função para limpar as formas existentes
 function clearShapes(){
-    const shapes = document.querySelectorAll('.square, .smallCircle');
+    const shapes = document.querySelectorAll('.square, .small-circle');
     shapes.forEach(shape => shape.remove());
 }
 //Função para resetar o fundo e remover formas(botão 3)
